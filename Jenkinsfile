@@ -8,7 +8,7 @@ pipeline
 
     stages 
     {
-        stage('Build') 
+       /* stage('Build') 
         {
             steps 
             {
@@ -23,7 +23,7 @@ pipeline
                     archiveArtifacts 'target/*.jar'
                 }
             }
-        }
+        }*/
         
         
         stage("Deploy to QA"){
