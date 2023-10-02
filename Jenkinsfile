@@ -45,7 +45,7 @@ pipeline
                      publishHTML([allowMissing: false,
                                   alwaysLinkToLastBuild: false, 
                                   keepAll: false, 
-                                  reportDir: 'build', 
+                                  reportDir: 'reports', 
                                   reportFiles: 'TestExecutionReport.html', 
                                   reportName: 'HTML Extent Report', 
                                   reportTitles: ''])
