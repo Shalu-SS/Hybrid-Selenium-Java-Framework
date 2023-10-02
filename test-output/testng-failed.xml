@@ -3,17 +3,17 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [Open Cart Regression Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
   <listeners>
     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
-    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
-    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
-    <listener class-name="com.qa.opencart.listeners.ItextPdfListener"/>
   </listeners>
   <test thread-count="1" parallel="tests" name="Login Page Test(failed)" verbose="4">
     <classes>
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
+          <include name="loginTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginPageURLTest"/>
           <include name="setUp"/>
-          <include name="ForgotPwdTest"/>
           <include name="tearDown"/>
+          <include name="ForgotPwdTest"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
     </classes>
